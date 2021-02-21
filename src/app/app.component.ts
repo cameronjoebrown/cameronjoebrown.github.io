@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio-website';
+  // Track whether the menu is open. Start collapsed so it doesn't open automatically on small screens.
+  public isMenuCollapsed = true;
 }
