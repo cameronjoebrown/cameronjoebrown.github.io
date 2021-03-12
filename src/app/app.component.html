@@ -1,5 +1,5 @@
 <!-- Navigation-->
-<nav class="navbar sticky-top navbar-dark navbar-expand-lg bg-dark">
+<nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light bg-transparent" (scroll)="onWindowScroll();">
   <div class="container-fluid">
     <a class="navbar-brand" routerLink="">Cameron Brown</a>
     <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">

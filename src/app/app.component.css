@@ -1,7 +1,11 @@
 .nav-link, .navbar-brand {
-  color : white;
+  color : black;
 }
 
 .nav-link:hover, .navbar-brand:hover {
   color: darkgray;
 }
+
+
+
+
