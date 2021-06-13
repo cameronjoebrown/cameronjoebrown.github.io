@@ -13,7 +13,7 @@ export class AppComponent {
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(): any {
     const element = document.querySelector('.navbar');
-    if (window.pageYOffset > 185) {
+    if (window.pageYOffset > 50) {
       element.classList.remove('bg-transparent');
     } else {
       element.classList.add('bg-transparent');
