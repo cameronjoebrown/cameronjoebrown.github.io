@@ -1,5 +1,6 @@
 .nav-link, .navbar-brand {
   color : black;
+  font-size: 20px;
 }
 
 .nav-link:hover, .navbar-brand:hover {

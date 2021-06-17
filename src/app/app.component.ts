@@ -13,10 +13,16 @@ export class AppComponent {
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(): any {
     const element = document.querySelector('.navbar');
-    if (window.pageYOffset > 50) {
+    if (window.pageYOffset > 5) {
       element.classList.remove('bg-transparent');
     } else {
       element.classList.add('bg-transparent');
     }
+  }
+
+  toggleCollapsedMenu(): any {
+    this.isMenuCollapsed = !this.isMenuCollapsed;
+    const element = document.querySelector('.navbar');
+    element.classList.toggle('bg-transparent');
   }
 }

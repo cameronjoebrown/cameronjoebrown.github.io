@@ -1,8 +1,8 @@
 <!-- Navigation-->
-<nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light" (scroll)="onWindowScroll();">
+<nav class="navbar fixed-top navbar-light navbar-expand-sm bg-light bg-transparent" (scroll)="onWindowScroll();">
   <div class="container-fluid">
-    <a class="navbar-brand" routerLink="">Cameron Brown</a>
-    <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+    <a class="navbar-brand" routerLink="" (click)="isMenuCollapsed = true">Cameron Brown</a>
+    <button class="navbar-toggler" type="button" (click)="toggleCollapsedMenu()">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
@@ -16,6 +16,5 @@
   </div>
 </nav>
 
-<!-- TODO: Should I add a footer with copyright and other usual footer stuff? -->
 <!-- The routed views render in the <router-outlet>-->
 <router-outlet></router-outlet>
