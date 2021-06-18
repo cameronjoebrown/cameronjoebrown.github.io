@@ -1,21 +1,20 @@
 <!-- Navigation-->
-<nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light" (scroll)="onWindowScroll();">
+<nav class="navbar fixed-top navbar-light navbar-expand-sm bg-light bg-transparent" (scroll)="onWindowScroll();">
   <div class="container-fluid">
-    <a class="navbar-brand" routerLink="">Cameron Brown</a>
-    <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+    <a class="navbar-brand" routerLink="" (click)="toggleCollapsedMenu()">Cameron Brown</a>
+    <button class="navbar-toggler" type="button" (click)="toggleCollapsedMenu()">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" routerLink="" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active" (click)="isMenuCollapsed = true">Home</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/about" routerLinkActive="active" (click)="isMenuCollapsed = true">About</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/portfolio" routerLinkActive="active" (click)="isMenuCollapsed = true">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/contact" routerLinkActive="active" (click)="isMenuCollapsed = true">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active" (click)="toggleCollapsedMenu()">Home</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/about" routerLinkActive="active" (click)="toggleCollapsedMenu()">About</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/portfolio" routerLinkActive="active" (click)="toggleCollapsedMenu()">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/contact" routerLinkActive="active" (click)="toggleCollapsedMenu()">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- TODO: Should I add a footer with copyright and other usual footer stuff? -->
 <!-- The routed views render in the <router-outlet>-->
 <router-outlet></router-outlet>
