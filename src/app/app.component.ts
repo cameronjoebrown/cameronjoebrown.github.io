@@ -23,6 +23,16 @@ export class AppComponent {
   toggleCollapsedMenu(): any {
     this.isMenuCollapsed = !this.isMenuCollapsed;
     const element = document.querySelector('.navbar');
-    element.classList.toggle('bg-transparent');
+    if (!this.isMenuCollapsed) {
+      element.classList.remove('bg-transparent');
+    } else {
+      element.classList.add('bg-transparent');
+    }
+  }
+
+  closeMenu(): any {
+    this.isMenuCollapsed = true;
+    const element = document.querySelector('.navbar');
+    element.classList.add('bg-transparent');
   }
 }
