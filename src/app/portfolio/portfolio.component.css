@@ -1,0 +1,12 @@
+
+.project-background-2  {
+  background-color: white;
+}
+
+.project-background-1 {
+  background-color: lightgrey;
+  -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+  clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+  padding: 65px 10px;
+}
+

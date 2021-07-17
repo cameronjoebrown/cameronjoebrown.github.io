@@ -1,5 +1,5 @@
 .jumbotron {
-  background-image:url('../../assets/img/valdez-photo.jpg');
+  background-image: url('src/assets/img/homepage-cover.jpg');
   background-size: cover;
   padding-bottom:540px;
   height: 100vh;
@@ -17,8 +17,5 @@ button {
   color: white;
 }
 
-.text-shadow {
-  text-shadow: 2px 2px 2px black;
-}
 
 
