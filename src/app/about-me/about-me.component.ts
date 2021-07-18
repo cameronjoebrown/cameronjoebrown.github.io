@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-about-me',
@@ -8,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class AboutMeComponent implements OnInit {
 
   constructor() { }
+
+  faGithub = faGithub;
+  faLinkedin = faLinkedin;
 
   ngOnInit(): void {
   }
