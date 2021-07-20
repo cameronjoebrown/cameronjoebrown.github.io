@@ -28,7 +28,9 @@
     "@ng-bootstrap/ng-bootstrap": "^10.0.0",
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^4.6.0",
+    "chokidar": "^3.5.2",
     "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
     "postcss": "^8.3.5",
     "rxjs": "6.5.5",
     "save": "^2.4.0",
@@ -60,5 +62,8 @@
     "protractor": "~7.0.0",
     "ts-node": "~10.1.0",
     "typescript": "~4.3.5"
+  },
+  "resolutions": {
+    "glob-parent": "5.1.2"
   }
 }
