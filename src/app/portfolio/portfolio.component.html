@@ -5,30 +5,43 @@
       <h1>Portfolio</h1>
     </div>
   </div>
-  <div class="row text-center">
-    <div class="col-lg-12">
-      <p>
-        Visit my Github profile to view the code for these projects,
-        as well as any other code I have written.
-      </p>
-      <a type="button" class="btn btn-primary m-2" href="https://www.github.com/cameronjoebrown" target="_blank">
-        View My Github
-      </a>
-    </div>
-  </div>
 
   <!-- The projects -->
   <div class="row project-row-1">
     <div class="col-sm-8 offset-sm-2">
       <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-6">
+          <img src="../../assets/img/fidelity.png" class="img-fluid" alt="A sample picture of the project">
+        </div>
+        <div class="col-lg-6">
+          <h2>Summer Internship 2021</h2>
+          <h4>Fidelity Investments</h4>
+          <p>
+            I helped build a Dashboard view for a business automation platform which
+            contained data from the app summarized in useful charts, graphs, and tables.
+          </p>
+          <h4>Technology</h4>
+          <p>
+            The app was built using Angular and styled using Bootstrap. The charts/graphs
+            were built using Highcharts and tables using AG Grid and the actual data
+            was retrieved using Elasticsearch queries.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row project-row-2">
+    <div class="col-sm-8 offset-sm-2">
+      <div class="row">
+        <div class="col-lg-8  order-lg-8">
           <img src="../../assets/img/valdez-photo2.jpg" class="img-fluid" alt="A sample picture of the project">
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 order-lg-4">
           <h2>Portfolio Website</h2>
           <p>
             My personal portfolio website that I decided to build myself
-            rather than using Wordpress, Square, Wix, or similar services.
+            rather than using Wordpress or similar services.
           </p>
           <h4>Technology</h4>
           <p>
@@ -36,18 +49,44 @@
           </p>
           <p>
             Most of the styling and design was done by myself using Bootstrap 4, but I also used some
-            of Chris Dermody's design and code that he was giving away for free. You can view his code
+            of Chris Dermody's code that he was giving away for free. You can view his code
             <a href="https://github.com/Chippd/chippd.github.io">here.</a>
           </p>
         </div>
       </div>
       <div class="row justify-content-center" style="margin: 20px;">
-          <a type="button" class="btn btn-primary" href="https://www.github.com/cameronjoebrown" target="_blank">
+          <a type="button" class="btn btn-primary" href="https://github.com/cameronjoebrown/PortfolioWebsite" target="_blank">
             View Code
           </a>
       </div>
     </div>
+  </div>
 
+  <div class="row project-row-1">
+    <div class="col-sm-8 offset-sm-2">
+      <div class="row">
+        <div class="col-lg-8">
+          <img src="../../assets/img/valdez-photo2.jpg" class="img-fluid" alt="A sample picture of the project">
+        </div>
+        <div class="col-lg-4">
+          <h2>Trip Planner</h2>
+          <p>
+            A web app for planning trips that I helped build for a group project at BYU.
+            I, specifically, was on the front end team.
+          </p>
+          <h4>Technology</h4>
+          <p>
+            The front end was built using Vue and styled using Tailwind CSS.
+            We also used Vuex to manage state.
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-center" style="margin: 20px;">
+        <a type="button" class="btn btn-primary" href="https://github.com/J-Ridgwell/trip-planner-frontend" target="_blank">
+          View Code
+        </a>
+      </div>
+    </div>
   </div>
 
   <div class="row project-row-2">
@@ -59,25 +98,21 @@
         <div class="col-lg-4 order-lg-4">
           <h2>Twitter Clone</h2>
           <p>
-            An Android app similar to Twitter that I built for a class project.
+            An Android app similar to Twitter that I built for a class project at BYU.
           </p>
           <h4>Technology</h4>
           <p>
-            An Android front end implemented using the MVP (Model View Presenter) pattern connected to a
+            An Android front end using the Model View Presenter pattern and a back end
+            using Amazon API Gateway, AWS Lambda, Amazon SQS, and DynamoDB.
           </p>
         </div>
       </div>
-      <!-- TODO:  Maybe have a link to each of the apps running somewhere -->
-
-      <!-- TODO: Maybe add more detailed analysis of each project. Maybe just in the README or Wiki on the repo?
-      <h4>Analysis</h4>
-      <p>
-        If you'd like to read a detailed analysis of the project and the decisions I made while building it,
-        you can read it <a routerLink="/about">here.</a>
-      </p>
-      -->
+      <div class="row justify-content-center" style="margin: 20px;">
+        <a type="button" class="btn btn-primary" href="https://github.com/cameronjoebrown/byucs340-twitterclone" target="_blank">
+          View Code
+        </a>
+      </div>
     </div>
-
   </div>
 
 </div>
