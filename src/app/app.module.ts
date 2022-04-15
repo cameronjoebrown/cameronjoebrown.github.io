@@ -9,7 +9,6 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +16,7 @@ import { BlogComponent } from './blog/blog.component';
     HomeComponent,
     ContactComponent,
     PortfolioComponent,
-    AboutMeComponent,
-    BlogComponent
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,
