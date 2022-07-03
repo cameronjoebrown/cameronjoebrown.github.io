@@ -12,4 +12,8 @@ export class PortfolioComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openLink(link: string) {
+    window.open(link, "_blank");
+  }
+
 }
