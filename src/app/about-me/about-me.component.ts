@@ -2,19 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { faGithub, faLinkedin, faGoodreads } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
-  selector: 'app-about-me',
-  templateUrl: './about-me.component.html',
-  styleUrls: ['./about-me.component.css']
+    selector: 'app-about-me',
+    templateUrl: './about-me.component.html',
+    styleUrls: ['./about-me.component.css']
 })
 export class AboutMeComponent implements OnInit {
+    constructor() {}
 
-  constructor() { }
+    faGithub = faGithub;
+    faLinkedin = faLinkedin;
+    faGoodreads = faGoodreads;
 
-  faGithub = faGithub;
-  faLinkedin = faLinkedin;
-  faGoodreads = faGoodreads;
-
-  ngOnInit(): void {
-  }
-
+    ngOnInit(): void {}
 }

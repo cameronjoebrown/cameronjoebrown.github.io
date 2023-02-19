@@ -6,14 +6,14 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'portfolio', component: PortfolioComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'about', component: AboutMeComponent }
-  ];
+    { path: '', component: HomeComponent },
+    { path: 'portfolio', component: PortfolioComponent },
+    { path: 'contact', component: ContactComponent },
+    { path: 'about', component: AboutMeComponent }
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {})],
-  exports: [RouterModule]
+    imports: [RouterModule.forRoot(routes, {})],
+    exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
