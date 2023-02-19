@@ -20,4 +20,4 @@ jobs:
       - name: Build
         run: yarn build --configuration production
       - name: Deploy to GitHub Pages
-        run: ng deploy --base-href=/PortfolioWebsite/
+        run: yarn deploy
