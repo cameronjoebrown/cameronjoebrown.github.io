@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "tsc --noEmit && eslint . --ext js,ts,json --quiet --fix",
     "e2e": "ng e2e",
-    "deploy": "ng deploy --base-href=/PortfolioWebsite/"
+    "deploy": "ng deploy --base-href=/PortfolioWebsite/ --no-silent"
   },
   "private": true,
   "dependencies": {
