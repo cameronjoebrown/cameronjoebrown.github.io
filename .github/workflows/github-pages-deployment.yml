@@ -19,9 +19,7 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Build
         run: yarn build --configuration production
-      - name: GitHub Setup
-        uses: oleksiyrudenko/gha-git-credentials@v2-latest
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          token: '${{ secrets.GITHUB_TOKEN }}'
-      - name: Deploy to GitHub Pages
-        run: yarn deploy
+          folder: dist # The folder the action should deploy.
