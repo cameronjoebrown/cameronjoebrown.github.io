@@ -7,14 +7,12 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    uses: oleksiyrudenko/gha-git-credentials@v2-latest
+    with:
+      token: '${{ secrets.GITHUB_TOKEN }}'
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Config GitHub
-        run: |
-          git config --global user.name 'Cameron Brown'
-          git config --global user.email 'cameronjoebrown@gmail.com'
-      
       - name: Set up node
         uses: actions/setup-node@v3
         with:
