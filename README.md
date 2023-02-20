@@ -1,6 +1,6 @@
-# My Portfolio Website
+# Cameron Brown's Portfolio Website
 
-This is the code for Cameron Brown's Portfolio Website which can be viewed at https://www.cameronjoebrown.com.
+This is the code for my Portfolio Website which can be viewed at https://www.cameronjoebrown.com
 
 ## How It Was Built
 
@@ -10,4 +10,4 @@ some styling coming from Chris Dermody. You can view his code
 
 ## Deployment
 
-This site is deployed to GitHub Pages. This is currently done manually using angular-cli-ghpages.
+This site is deployed to GitHub Pages. This is currently done manually using angular-cli-ghpages
