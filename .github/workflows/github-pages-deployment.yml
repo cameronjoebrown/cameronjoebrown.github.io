@@ -8,12 +8,13 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Config GitHub
         run: |
           git config user.name 'Cameron Brown'
           git config user.email 'cameronjoebrown@gmail.com'
-      - name: Checkout
-        uses: actions/checkout@v3
+      
       - name: Set up node
         uses: actions/setup-node@v3
         with:
