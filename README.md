@@ -10,4 +10,4 @@ some styling coming from Chris Dermody. You can view his code
 
 ## Deployment
 
-This site is deployed to GitHub Pages. This is currently done manually using angular-cli-ghpages
+This site is deployed to GitHub Pages using GitHub Actions
