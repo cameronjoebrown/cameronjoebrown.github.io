@@ -7,9 +7,6 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    uses: oleksiyrudenko/gha-git-credentials@v2-latest
-    with:
-      token: '${{ secrets.GITHUB_TOKEN }}'
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -23,4 +20,7 @@ jobs:
       - name: Build
         run: yarn build --configuration production
       - name: Deploy to GitHub Pages
+        uses: oleksiyrudenko/gha-git-credentials@v2-latest
+         with:
+           token: '${{ secrets.GITHUB_TOKEN }}'
         run: yarn deploy
