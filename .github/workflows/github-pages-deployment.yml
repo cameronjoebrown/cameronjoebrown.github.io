@@ -8,10 +8,6 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: GitHub Setup
-        uses: oleksiyrudenko/gha-git-credentials@v2-latest
-        with:
-          token: '${{ secrets.GITHUB_TOKEN }}'
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up node
@@ -23,5 +19,9 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Build
         run: yarn build --configuration production
+      - name: GitHub Setup
+        uses: oleksiyrudenko/gha-git-credentials@v2-latest
+        with:
+          token: '${{ secrets.GITHUB_TOKEN }}'
       - name: Deploy to GitHub Pages
         run: yarn deploy
