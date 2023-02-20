@@ -12,8 +12,8 @@ jobs:
         uses: actions/checkout@v3
       - name: Config GitHub
         run: |
-          git config user.name 'Cameron Brown'
-          git config user.email 'cameronjoebrown@gmail.com'
+          git config --global user.name 'Cameron Brown'
+          git config --global user.email 'cameronjoebrown@gmail.com'
       
       - name: Set up node
         uses: actions/setup-node@v3
