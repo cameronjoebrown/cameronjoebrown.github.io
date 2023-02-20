@@ -6,8 +6,8 @@ This is the code for Cameron Brown's Portfolio Website which can be viewed at ht
 
 This is just a static website built using Angular and styled using Bootstrap with
 some styling coming from Chris Dermody. You can view his code
-[here](https://github.com/Chippd/chippd.github.io). There is no backend besides AWS Amplify being used for deployment. 
+[here](https://github.com/Chippd/chippd.github.io). 
 
 ## Deployment
-AWS Amplify is being used to manage/automate deployments because it is simple.
 
+This site is deployed to GitHub Pages. This is currently done manually using angular-cli-ghpages.
