@@ -8,7 +8,8 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: oleksiyrudenko/gha-git-credentials@v2-latest
+      - name: GitHub Setup
+        uses: oleksiyrudenko/gha-git-credentials@v2-latest
          with:
            token: '${{ secrets.GITHUB_TOKEN }}'
       - name: Checkout
