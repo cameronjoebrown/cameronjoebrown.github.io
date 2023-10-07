@@ -32,7 +32,7 @@
     "chokidar": "^3.5.3",
     "glob-parent": "6.0.2",
     "jquery": "^3.6.0",
-    "postcss": "^8.3.5",
+    "postcss": "^8.4.31",
     "rxjs": "7.5.2",
     "save": "^2.4.0",
     "tslib": "^2.0.0",
