@@ -1,12 +1,12 @@
 .nav-link, .navbar-brand {
-  color : black;
+  color : #4d4d4d;
   font-size: 20px;
 }
 
 .nav-link:hover, .navbar-brand:hover {
-  color: darkgray;
+  color: black;
 }
 
-
-
-
+.navbar-nav .active {
+  color: black;
+}

@@ -4,3 +4,7 @@
 .distance-from-navbar {
   padding-top: 75px;
 }
+
+body, html {
+  background: #d0e8ca;
+}
