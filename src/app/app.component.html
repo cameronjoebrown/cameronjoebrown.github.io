@@ -1,7 +1,7 @@
 <nav class="navbar fixed-top navbar-light navbar-expand-sm bg-on-scroll bg-transparent" (scroll)="onWindowScroll();">
   <div class="container-fluid">
     <a class="navbar-brand" routerLink="" (click)="closeMenu()">Cameron Brown</a>
-    <button class="navbar-toggler" type="button" (click)="toggleCollapsedMenu()">
+    <button class="navbar-toggler" type="button" (click)="toggleCollapsedMenu()" aria-label="Expand Menu">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
