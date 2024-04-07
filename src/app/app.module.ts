@@ -7,7 +7,6 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { NgOptimizedImage } from '@angular/common';
 
 @NgModule({
     declarations: [
@@ -16,7 +15,7 @@ import { NgOptimizedImage } from '@angular/common';
         ContactComponent,
         AboutMeComponent
     ],
-    imports: [BrowserModule, AppRoutingModule, NgbModule, FontAwesomeModule, NgOptimizedImage],
+    imports: [BrowserModule, AppRoutingModule, NgbModule, FontAwesomeModule],
     providers: [],
     bootstrap: [AppComponent]
 })
