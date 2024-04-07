@@ -7,7 +7,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
 const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'contact', component: ContactComponent },
-    { path: 'about', component: AboutMeComponent }
+    { path: 'about', component: AboutMeComponent },
+    { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
