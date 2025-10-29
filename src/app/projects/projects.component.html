@@ -1,15 +1,89 @@
-<div class="container-fluid min-vh-100">
-    <div class="row align-content-center distance-from-navbar">
-        <div class="col-lg-12 text-center">
-            <h1>Projects</h1>
-        </div>
-    </div>
-    <div class="row align-content-center">
-        <div class="col-lg-6 text-center">
-            <h2>Iron Blossom Notifier</h2>
-        </div>
-        <div class="col-lg-6 text-center">
-            <h2>Portfolio Website</h2>
+<div class="container-fluid">
+    <div class="row min-vh-100 distance-from-navbar">
+        <div class="col-12">
+            <div class="text-center mt-5 mb-4">
+                <h1 class="display-4">My Projects</h1>
+                <p class="lead">A showcase of my open source work and professional experience</p>
+            </div>
+
+            <!-- Open Source Projects Section -->
+            <div class="mb-5">
+                <div class="text-center mb-4">
+                    <h2 class="section-title">
+                        <i class="fab fa-github"></i> Open Source Projects
+                    </h2>
+                    <p class="text-muted">Public projects available on GitHub</p>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 g-4 px-3">
+                    <div class="col" *ngFor="let project of openSourceProjects">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ project.title }}</h5>
+                                <p class="card-text">{{ project.description }}</p>
+                                <div class="mb-3">
+                                    <h6 class="text-muted">Technologies:</h6>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge bg-primary" *ngFor="let tech of project.technologies">{{ tech }}</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-footer bg-transparent">
+                                <div class="d-flex justify-content-between">
+                                    <a href="{{ project.githubUrl }}" class="btn btn-outline-dark btn-sm" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                    <a href="{{ project.liveUrl }}" class="btn btn-outline-dark btn-sm" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Work Section -->
+            <div class="mb-5">
+                <div class="text-center mb-4">
+                    <h2 class="section-title">
+                        <i class="fas fa-briefcase"></i> Professional Work
+                    </h2>
+                    <p class="text-muted">Projects from my professional experience</p>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2 g-4 px-3">
+                    <div class="col" *ngFor="let project of workProjects">
+                        <div class="card h-100 shadow-sm work-project-card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h5 class="card-title mb-0">{{ project.title }}</h5>
+                                    <span class="badge bg-secondary">{{ project.year }}</span>
+                                </div>
+                                <p class="text-muted mb-3">
+                                    <i class="fas fa-building"></i> {{ project.company }}
+                                </p>
+                                <p class="card-text">{{ project.description }}</p>
+
+                                <div class="mb-3">
+                                    <h6 class="text-muted">Technologies:</h6>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge bg-success" *ngFor="let tech of project.technologies">{{ tech }}</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-footer bg-transparent">
+                                <div class="text-muted small">
+                                    <i class="fas fa-lock"></i> Proprietary/Confidential
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

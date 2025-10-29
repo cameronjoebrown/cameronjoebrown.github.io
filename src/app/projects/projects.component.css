@@ -1,0 +1,33 @@
+.distance-from-navbar {
+    padding-top: 80px;
+}
+
+.section-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.section-title i {
+    margin-right: 0.5rem;
+}
+
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.work-project-card {
+    border-left: 4px solid #198754;
+}
+
+.badge {
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
