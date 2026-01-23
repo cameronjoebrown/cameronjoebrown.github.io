@@ -11,7 +11,7 @@ export class AppComponent {
     // Track whether the menu is open. Start collapsed so it doesn't open automatically on small screens.
     public isMenuCollapsed = true;
 
-    @HostListener('window:scroll', ['$event'])
+    @HostListener('window:scroll')
     onWindowScroll(): any {
         const element = document.querySelector('.navbar');
         if (window.pageYOffset > 5) {
