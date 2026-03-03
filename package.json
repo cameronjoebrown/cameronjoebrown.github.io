@@ -34,19 +34,25 @@
     "zone.js": "0.15.1"
   },
   "devDependencies": {
+    "@angular-eslint/schematics": "^21.2.0",
+    "@angular-eslint/template-parser": "^21.2.0",
     "@angular/build": "21.1.1",
     "@angular/cli": "21.1.1",
     "@angular/compiler-cli": "21.1.1",
     "@types/node": "25.3.3",
     "@typescript-eslint/eslint-plugin": "8.56.1",
     "@typescript-eslint/parser": "8.56.1",
+    "@typescript-eslint/types": "8.56.1",
+    "@typescript-eslint/utils": "^8.56.1",
     "angular-cli-ghpages": "3.0.0",
     "eslint": "9.26.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-prettier": "5.5.5",
+    "jsdom": "28.1.0",
     "prettier": "3.8.1",
     "prettier-eslint": "13.0.0",
     "ts-node": "10.9.2",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "vitest": "4.0.18"
   }
 }

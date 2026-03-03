@@ -1,21 +1,22 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AboutMeComponent } from './about-me.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AppModule } from '../app.module';
 
 describe('AboutMeComponent', () => {
     let component: AboutMeComponent;
     let fixture: ComponentFixture<AboutMeComponent>;
 
-    beforeEach(waitForAsync(() => {
+    beforeEach(async () => {
         TestBed.configureTestingModule({
-            declarations: [AboutMeComponent]
+            declarations: [AboutMeComponent],
+            imports: [AppModule, FontAwesomeModule]
         }).compileComponents();
-    }));
 
-    beforeEach(() => {
         fixture = TestBed.createComponent(AboutMeComponent);
         component = fixture.componentInstance;
-        fixture.detectChanges();
+        fixture.whenStable();
     });
 
     it('should create', () => {
