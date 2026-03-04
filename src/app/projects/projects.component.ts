@@ -15,6 +15,12 @@ export class ProjectsComponent implements OnInit {
       technologies: ['Angular', 'Bootstrap'],
       gitHubUrl: 'https://github.com/cameronjoebrown/cameronjoebrown.github.io',
       liveUrl: 'https://cameronjoebrown.com'
+    },
+    {
+      title: 'Iron Blossom Web Scraper',
+      description: 'A web scraper of the Iron Blossom Lodge Timeshares for Sale website that sends an email when a new Timeshare unit is posted for sale.',
+      technologies: ['Python', 'BeautifulSoup'],
+      gitHubUrl: 'https://github.com/cameronjoebrown/ironblossom-web-scraper',
     }
   ];
 
