@@ -1,10 +1,9 @@
-import { NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [NgFor],
+  imports: [],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
@@ -12,20 +11,20 @@ export class ProjectsComponent implements OnInit {
   openSourceProjects = [
     {
       title: 'Portfolio Website',
-      description: 'This website is a showcase of my open source work and professional experience',
+      description: 'The code for this portfolio website, built with Angular and Bootstrap. It is currently deployed using a Github Action and hosted on GitHub Pages.',
       technologies: ['Angular', 'Bootstrap'],
-      gitHubUrl: 'https://github.com/cameronjoebrown/portfolio-website',
+      gitHubUrl: 'https://github.com/cameronjoebrown/cameronjoebrown.github.io',
       liveUrl: 'https://cameronjoebrown.com'
     }
   ];
 
   workProjects = [
     {
-      title: 'Enterprise Financial Platform',
-      description: "A platform for managing and analyzing enterprise financial data",
-      technologies: ['React', 'Spring Boot', 'AWS'],
-      company: 'Pivotal',
-      year: '2023'
+      title: 'Digital Automation Platform UI',
+      description: "A web-based UI for managing and visualizing BPMN workflows in Camunda 7.",
+      technologies: ['Angular', 'Cypress', 'Playwright', 'Kubernetes', 'AWS'],
+      company: 'Fidelity Investments',
+      year: '2022-2024'
     }
   ]
 
