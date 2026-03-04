@@ -12,7 +12,7 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'Portfolio Website',
       description: 'The code for this portfolio website, built with Angular and Bootstrap. It is currently deployed using a Github Action and hosted on GitHub Pages.',
-      technologies: ['Angular', 'Bootstrap'],
+      technologies: ['Angular', 'Bootstrap', 'TypeScript', 'GitHub Actions', 'GitHub Pages'],
       gitHubUrl: 'https://github.com/cameronjoebrown/cameronjoebrown.github.io',
       liveUrl: 'https://cameronjoebrown.com'
     },
@@ -28,9 +28,16 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'Digital Automation Platform UI',
       description: "A web-based UI for managing and visualizing BPMN workflows in Camunda 7.",
-      technologies: ['Angular', 'Cypress', 'Playwright', 'Kubernetes', 'AWS'],
+      technologies: ['Angular', 'Cypress', 'Playwright', 'Kubernetes', 'AWS', 'TypeScript'],
       company: 'Fidelity Investments',
       year: '2022-2024'
+    },
+    {
+      title: 'Enterprise Task Management API',
+      description: 'A REST API that provides additional capabilities on top of the existing task resources in the Camunda 7 platform.',
+      technologies: ['Node.js', 'NestJS', 'Kubernetes', 'PostgreSQL', 'Camunda 7', 'AWS', 'TypeScript'],
+      company: 'Fidelity Investments',
+      year: '2024-Present'
     }
   ]
 
